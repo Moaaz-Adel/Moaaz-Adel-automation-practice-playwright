@@ -21,7 +21,7 @@ export class FeedBackPage {
     this.subjectField = page.locator("#subject");
     this.questionField = page.locator("#comment");
     this.sendMessageBtn = page.locator("[name='submit']");
-    this.feedBackMessage = page.locator(00);
+    this.feedBackMessage = page.locator("#feedback-title");
     this.clearBtn = page.locator("[name='Clear']");
     this.feedBackBtn = page.locator("#feedback");
   }
