@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "pretest": "tsc --incremental -p tests/tsconfig.json",
-    "test": "playwright test -c tests-out"
+    "test": "playwright test -c tests-out",
+    "test:api": "playwright test --config=api.config.ts --project=Chromium --reporter=list",
+    "test:e2e": "playwright test --config=playwright.config.ts --project=Chromium --reporter=list"
   },
   "keywords": [],
   "author": "",
